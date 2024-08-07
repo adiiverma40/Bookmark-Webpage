@@ -24,6 +24,5 @@ export function useDominantColor(imageUrl) {
 
     fetchDominantColor();
   }, [imageUrl]);
-  console.log(fontColor)
   return fontColor;
 }

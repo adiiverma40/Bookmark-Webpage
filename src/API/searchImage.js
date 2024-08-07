@@ -1,4 +1,4 @@
-const UNSPLASH_ACCESS_KEY = "api";
+const UNSPLASH_ACCESS_KEY = "4Ugy7tvb3jrVl2ImXJsGtmgMIyjU5BDkUGZ9V9OPrfY";
 
 async function searchImage(query) {
     let query_search;
