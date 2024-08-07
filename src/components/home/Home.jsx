@@ -4,17 +4,16 @@ import Card from "../card/Card";
 function Home() {
   const { imageUrl, fontColor } = useOutletContext();
   const cards = [
-    { text: "Google", link: "https://google.com", description: "Search engine, technology giant, innovative, advertising, Android, AI, cloud services, maps, YouTube, research." },
-    { text: "Khan Academy", link: "https://khanacademy.org", description: "Free online courses, lessons, and practice in math, science, and more." },
-    { text: "Coursera", link: "https://coursera.org", description: "Online courses, specializations, and degrees from top universities and companies." },
-    { text: "edX", link: "https://edx.org", description: "Online courses from the world’s best universities and institutions." },
-    { text: "Wolfram Alpha", link: "https://wolframalpha.com", description: "Computational knowledge engine and online calculator." },
-    { text: "Quizlet", link: "https://quizlet.com", description: "Study tools, flashcards, and games for learning." },
-    { text: "Duolingo", link: "https://duolingo.com", description: "Language learning app with gamified lessons." },
-    { text: "Evernote", link: "https://evernote.com", description: "Note-taking app for organizing and managing information." },
-    { text: "Notion", link: "https://notion.so", description: "All-in-one workspace for notes, tasks, and collaboration." },
-    { text: "Grammarly", link: "https://grammarly.com", description: "Writing assistant that checks grammar, spelling, and style." },
-  ];
+    { "text": "Gmail", "link": "https://mail.google.com", "description": "Email service, communication, inbox organization, Google integration, search functionality, security, storage." },
+  { "text": "Google Drive", "link": "https://drive.google.com", "description": "Cloud storage, file sharing, document collaboration, Google integration, backup, synchronization, file organization." },
+  { "text": "Google Photos", "link": "https://photos.google.com", "description": "Photo storage, image organization, automatic backup, sharing, editing tools, cloud access, Google integration." },
+  { "text": "YouTube", "link": "https://youtube.com", "description": "Video sharing, content creation, streaming, playlists, channels, subscriptions, recommendations, community engagement." },
+  { "text": "WhatsApp", "link": "https://www.whatsapp.com", "description": "Messaging app, text and voice communication, file sharing, video calls, group chats, end-to-end encryption, cross-platform." },
+  { "text": "Instagram", "link": "https://www.instagram.com", "description": "Photo and video sharing, social networking, stories, reels, hashtags, followers, content discovery, social engagement." },
+  { "text": "Twitter", "link": "https://twitter.com", "description": "Microblogging, social networking, tweets, hashtags, trending topics, real-time updates, follower interactions, news." },
+   { text: "Google", link: "https://google.com", description: "Search engine, technology giant, innovative, advertising, Android, AI, cloud services, maps, YouTube, research." },
+    { text: "Github", link: "https://github.com", description: "GitHub is a platform for version control and collaborative software development." },
+    ];
   return (
     <div
       className="min-h-screen w-full bg-cover bg-center"
@@ -26,8 +25,8 @@ function Home() {
         color: fontColor,
       }}
     >
-        <h2 className="text-center">Welcome, Home!</h2>
-      <div className="items-center justify-center" style={{ display: "flex", flexWrap: "wrap", gap: "16px", padding: "13px" }}>
+        <h2 className="text-center pt-16 text-2xl">Welcome, Home!</h2>
+      <div className="items-center justify-center template" style={{ display: "flex", flexWrap: "wrap", gap: "16px", padding: "13px" }}>
       {cards.map((card, index) => (
         <Card
           key={index}
